@@ -1,0 +1,107 @@
+/* select everything including including pseudo-elements */
+*,
+*::before,
+*::after
+ {
+    /* 2. Make sizing easy (Padding doesn't increase width) */
+  box-sizing: border-box;
+
+  /* 3. Remove all default browser spacing */
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: inherit;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+.main-container {
+    min-height: 100vh;
+    border: 3px solid darkolivegreen;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    
+}
+    
+
+ h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+ img {
+    display: block;
+     max-width: 100%;
+    height: auto;  
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+.qoute {
+    background-color: bisque;    
+    margin-bottom: 3%;
+    border-left: 3px solid silver;
+    padding: 2em;
+}
+.qoute >p {
+    font-style: italic;
+}
+
+.paragraphs {
+    background-color: indianred;
+    padding: 2em;
+    margin-bottom: 3%;
+}
+
+.paragraphs > p {
+    margin-bottom: 3%;
+}
+
+.paragraphs p:first-of-type {
+    font-weight: 700;
+}
+
+.achievements {
+    background-color: skyblue;
+    padding: 2em;
+    margin-bottom: 3%;
+}
+
+.achievements > h2 {
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+}
+.achievements > ul {
+      padding-left: 40px;
+}
+
+ul >li {
+    margin-bottom: 5px;
+  
+}
+
+.footer {
+    
+    padding: 2em;
+    margin-bottom: 3%;
+    
+}
+.footer > a{
+    text-decoration: none;
+    line-height: 1.6;
+    color: #0056b3;
+}
+.footer > a:hover {
+    text-decoration: underline;
+}
